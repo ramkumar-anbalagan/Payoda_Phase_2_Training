@@ -1,0 +1,15 @@
+.head{
+    background-color: #cb4e06;
+}
+body{
+    background: url('background.jpg') no-repeat;
+    
+    
+}
+img{
+    z-index:-1;
+}
+.card,.accordion-button{
+    background-color: #cb4e06;
+    color: white;
+}
