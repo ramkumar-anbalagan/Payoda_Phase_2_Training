@@ -1,0 +1,8 @@
+<div class="outer">
+    <label for="nameGetter">Enter your nice name :</label>
+    <input class="form-control"  id="nameGetter" type="text" [(ngModel)]="username" style="width: 300px;" />
+    <button class="btn btn-danger" [disabled]="username == ''" (click)="onClick()" >Click Me</button>
+
+
+    <p >Welcome  {{this.showname}}!  </p>
+</div>
