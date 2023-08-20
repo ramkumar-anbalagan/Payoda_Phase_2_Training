@@ -1,0 +1,12 @@
+<div class="outer">
+    <input class="form-control" type="number" [(ngModel)]="number1" placeholder="Enter first number">
+    <select class="form-control" [(ngModel)]="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input class="form-control" type="number" [(ngModel)]="number2" placeholder="Enter second number">
+    <button  class="btn btn-secondary" (click)="calculate()">Calculate Result</button>
+    <p>Result : {{ result }}</p>
+  </div>
