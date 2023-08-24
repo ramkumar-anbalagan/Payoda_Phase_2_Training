@@ -1,0 +1,26 @@
+<form >
+  <div class="form-group" >
+      <label for="rollno"> Rollno : </label>
+      <input type="text" id="rollno" class="form-control"
+      name="rollno" [(ngModel)]="student.rollno">
+  </div>
+  <div class="form-group" >
+      <label for="studname"> Name : </label>
+      <input type="text" id="studname" [(ngModel)]="student.studname"
+      [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group" >
+      <label for="addr"> Address : </label>
+      <input type="text" id="addr" [(ngModel)]="student.addr"
+      [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group" >
+      <label for="phno">Phone No : </label>
+      <input type="text" id="phno" [(ngModel)]="student.phno"
+      [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group" >
+      <input type="button" value="Update" class="btn btn-success"
+      (click)="UpdateStudentById()">
+  </div>
+</form>
