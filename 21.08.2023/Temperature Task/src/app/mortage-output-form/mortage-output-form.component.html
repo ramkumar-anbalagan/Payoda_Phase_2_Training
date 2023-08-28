@@ -1,0 +1,10 @@
+<div *ngIf="this.temservice.monthlyPayment">
+  <h2>Results</h2>
+  <p>
+    Loan Amount : {{ this.temservice.loanAmount | currency : "INR" : "symbol" }}
+  </p>
+  <p>
+    Monthly Payment :
+    {{ this.temservice.monthlyPayment | currency : "INR" : "symbol" }}
+  </p>
+</div>

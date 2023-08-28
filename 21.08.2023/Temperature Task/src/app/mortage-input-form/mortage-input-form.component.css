@@ -1,0 +1,9 @@
+.input-box {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  padding: 36px;
+  line-height: 35px;
+  gap: 41px;
+  justify-content: center;
+}

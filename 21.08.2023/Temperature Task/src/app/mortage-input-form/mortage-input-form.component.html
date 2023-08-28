@@ -1,0 +1,20 @@
+<div class="input-box">
+  <h2>Mortgage Calculator</h2>
+  <label
+    >Purchase Price:
+    <input type="number" class="form-control" [(ngModel)]="purchasePrice"
+  /></label>
+  <label
+    >Down Payment:
+    <input type="number" class="form-control" [(ngModel)]="downPayment"
+  /></label>
+  <label
+    >Repayment Time (years):
+    <input type="number" class="form-control" [(ngModel)]="repaymentTime"
+  /></label>
+  <label
+    >Interest Rate (%):
+    <input type="number" class="form-control" [(ngModel)]="interestRate"
+  /></label>
+  <button class="btn btn-primary" (click)="calculateLoan()">Calculate</button>
+</div>

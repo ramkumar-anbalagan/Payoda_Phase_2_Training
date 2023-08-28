@@ -1,0 +1,18 @@
+<div class="main">
+  <div class="box">
+    <h1 style="text-align: center;">Temperature Converter</h1>
+    <label for="cel-temp" style="padding-left: 100px;">Temperature :</label>&nbsp;
+    <input style="margin-left: 20px;" id="cel-temp" [(ngModel)]="cel" >&nbsp;
+
+    <br><br>
+    <label for="fah-temp" style="padding-left: 100px;">Unit :</label>&nbsp;
+    <select   id="fah-temp" [(ngModel)]="unit" >
+      <option value="cel">Celsius</option>
+      <option value="fah">Fahrenheit</option>
+    </select>
+    <br><br>
+    <button style="margin-left: 222px;" (click)="convert()">Convert</button>
+    <p style="text-align: center;">{{result}}</p>
+  </div>
+</div>
+
